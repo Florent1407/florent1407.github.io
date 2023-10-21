@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Support</title>
+    <link href="support.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+
+        <a href="index.html" class="nav-icon" aria-label="visite la page d'acceuil"
+        aria-current="page">
+            <img src="Logo.png" alt="Logo" >
+        </a>
+
+        <div class="main-navlinks">
+            <div class="navlinks-container">
+                <a href="index.html" aria-current="page">Accueil</a>
+                <a href="Streetwear.html">Streetwear</a>
+                <a href="chaussures.html">Chaussures</a>
+                <a href="accessoires.html">Accessoires</a>
+                <a href="collector.html">Collector</a>
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1>
+        Formulaire de contact
+    </h1>
+    
+    <div class="formulaire">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="33537a99-7641-4d82-9140-a30e01e33ac5"/>
+            <label for="fname">Nom & prénom</label>
+            <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+
+            <label for="sujet">Objet</label>
+            <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+
+            <label for="emailAddress">Email</label>
+            <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</body>
+</html>
